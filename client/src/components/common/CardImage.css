@@ -1,0 +1,22 @@
+.card {
+  text-align: center;
+  height: auto;
+}
+.card-img {
+  overflow: hidden;
+}
+.card-img-overlay {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+  font-size: 1em;
+  color: blue;
+  width: 90%;
+}
+
+.card-text {
+  padding: 5px;
+}
+
