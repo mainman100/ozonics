@@ -1,8 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
-//const bodyParser = require("body-parser");
-//const passport = require("passport");
-//const path = require("path"); */
+const bodyParser = require("body-parser");
+const passport = require("passport");
+const path = require("path");
 
 // pointers to route folders
 const users = require("./routes/api/users.js");
@@ -13,8 +13,8 @@ const services = require("./routes/api/adminServices.js");
 const app = express();
 
 // middleware for body-parser.
-/* app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json()); */
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // DB config
 const db = require("./config/keys").mongoURI;
@@ -23,13 +23,13 @@ const db = require("./config/keys").mongoURI;
 mongoose
   .connect(db)
   .then(() => console.log("MongoDB connected"))
-  .catch(err => console.log(err)); 
+  .catch(err => console.log(err));
 
 // Passport middleware.
-/* app.use(passport.initialize()); */
+app.use(passport.initialize());
 
 // Passport Config. Passport needs a strategy for the relevant authorisation mode. ie a strategy for jwt or whatever the auth kind is used.
-/* require("./config/passport")(passport); */
+require("./config/passport")(passport);
 
 // establish initial test route - will later put routes into separate files
 //app.get("/", (req, res) => res.send("Hello!!!"));
