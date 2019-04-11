@@ -122,7 +122,7 @@ $size-basic: 1em;
 }
 
 @mixin section-heading-main-shadow {
-  font: calc($size-basic*2*2) bold $font-shadow;
+  
   letter-spacing: 0.1em;
   width: 100%;
   text-align: center;
