@@ -1,29 +1,72 @@
 import React from "react";
-import PropTypes from "prop-types";
-import "./LandingMain.css";
+import classnames from "classnames";
+import styles from "./LandingMain.module.scss";
 
 function LandingMain(props) {
+  const showInfo = false;
+
   return (
-    <div className="container-fluid landing-main">
-      <div className="d-flex">
-        <div className="row no-gutters">
-          <div
-            id="landing-main-aesthetics"
-            className="col-md landing-main-sections mask rgba-gradient "
-          >
-            <p className="landing-title">AESTHETICS ZONE</p>
+    <div className={classnames("container-fluid m-0 p-0", styles.sectionMain)}>
+      <div className={styles.sectionSlogan}>
+        <div className={classnames("row", "no-gutters")}>
+          <div className={classnames("col-md", styles.mainSlogan)}>
+            one stop aesthetics and health
           </div>
-          <div id="landing-main-health" className="col-md landing-main-sections ">
-            <p className="landing-title">HEALTH ZONES</p>
+          <div className={classnames("col-md", styles.secondarySlogan)}>
+            an integrated approach to mind and body
           </div>
         </div>
-        
       </div>
-      <div className="main-slogan row no-gutters">
-        <div className="p-2 col-12">one stop aesthetics and health</div>
-      </div>
-      <div className="secondary-slogan row no-gutters">
-        <div className="p-2 col-12">an integrated approach to mind and body</div>
+      <div className={classnames("row", "no-gutters")}>
+        <div
+          id={styles.sectionAesthetics}
+          className={classnames(
+            "col-12 col-md-6",
+            styles.mainSections,
+            "mask",
+            "rgba-gradient"
+          )}
+        >
+          <p className={styles.title}>PRECISION AESTHETICS</p>
+          {showInfo ? (
+            <div className={styles.description}>
+              <h5 className={classnames("ml-2", styles.descriptionItem1)}>
+                state of the art
+              </h5>
+              <h5 className={classnames("ml-2", styles.descriptionItem2)}>
+                empathetic
+              </h5>
+              <ul className={styles.descriptionServicesList}>
+                <li>LASER HAIR REMOVAL</li>
+                <li>TATTOO REMOVAL</li>
+                <li>ACNE SCARS</li>
+                <li>and more</li>
+              </ul>
+            </div>
+          ) : null}
+        </div>
+        <div
+          id={styles.sectionHealth}
+          className={classnames("col-12 col-md-6", styles.mainSections)}
+        >
+          <p className={styles.title}>INTEGRATED HEALTH</p>
+          {showInfo ? (
+            <div className={styles.description}>
+              <h5 className={classnames("ml-2", styles.descriptionItem1)}>
+                health therapies
+              </h5>
+              <h5 className={classnames("ml-2", styles.descriptionItem2)}>
+                scientifically based
+              </h5>
+              <ul className={styles.descriptionServicesList}>
+                <li>OZONE SAUNA</li>
+                <li>INFRARED SAUNA</li>
+                <li>SALT THERAPY</li>
+                <li>DRIP BAR</li>
+              </ul>
+            </div>
+          ) : null}
+        </div>
       </div>
     </div>
   );

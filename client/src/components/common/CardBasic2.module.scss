@@ -1,0 +1,31 @@
+@import "../../variables";
+
+.cardDiv {
+ margin: 10px;
+ border: 1px solid black;
+  @include mq($until: tablet) {
+    height: 280px;
+  }
+  @include mq($from: tablet) {
+    height: 260px;
+  }
+  @include mq($from: desktop) {
+    height: 290px;
+  }
+} 
+ 
+.cardDiv:hover {
+  background-color: $color-health;
+  color: white;
+}
+
+
+.cardTitle {@include mq($until: tablet) {
+  height: 24px;
+}
+@include mq($from: tablet) {
+  height: 24px;
+}
+@include mq($from: desktop) {
+  height: 24px;
+}}

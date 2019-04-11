@@ -1,0 +1,41 @@
+@import '../../variables';
+
+.sectionMain {
+  background-color: $color-bg-grey;
+}
+
+.sectionHeader {
+  @include general-section-heading-main;
+}
+
+.introMain {
+  width: 70%;
+  display: block;
+  margin: auto;
+  @include mq($until: tablet) {
+    width: 95%;
+  }
+  @include mq($from: tablet) {
+    width: 95%;
+  }
+  @include mq($from: desktop) {
+    width: 70%;
+  }
+}
+
+
+.introSlogan {
+  @include general-slogan;
+  font-weight: bold;
+}
+
+.introDetailSlogan {
+  @include text-detail-large;
+  font-weight: bold;
+}
+
+.introDetail {
+  @include text-detail;
+  margin: 2em;
+}
+

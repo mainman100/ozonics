@@ -1,0 +1,76 @@
+@import "../../variables";
+
+.service {
+  max-height: 202px;
+  max-width: 202px;
+  border: 2px solid rgb(255, 151, 151);
+}
+
+.serviceImg {
+  position: relative;
+  overflow: hidden;
+}
+
+.serviceOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.service:hover .serviceOverlay {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.service:hover .serviceOverlay > div {
+  color: rgb(38, 20, 116);
+  font-weight: bold;
+}
+
+.serviceTitle {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  color: rgb(245, 240, 240);
+  text-transform: uppercase;
+  font: bold 1em HKGroteskReg, Helvetica, sans-serif;
+}
+
+.serviceText {
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: rgb(245, 240, 240);
+}
+
+.serviceText2 {
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: rgb(245, 240, 240);
+}
+
+.serviceInfo {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}

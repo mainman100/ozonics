@@ -1,0 +1,40 @@
+@import '../../variables';
+
+.sectionMain {
+  padding: 0;
+ // background-color: $color-bg-grey;
+}
+
+.sectionHeader {
+  @include aesthetics-section-heading-main;
+}
+
+.introMain {
+  width: 70%;
+  display: block;
+  margin: auto;
+  @include mq($until: tablet) {
+    width: 95%;
+  }
+  @include mq($from: tablet) {
+    width: 95%;
+  }
+  @include mq($from: desktop) {
+    width: 70%;
+  }
+}
+
+.introSlogan {
+  @include aesthetics-slogan;
+}
+
+.introDetail {
+  @include text-detail;
+  text-align: justify;
+}
+
+.aestheticsGrid {
+  padding-bottom: 1.5em;
+}
+
+

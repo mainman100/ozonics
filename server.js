@@ -7,6 +7,7 @@ const path = require("path");
 // pointers to route folders
 const users = require("./routes/api/users.js");
 const services = require("./routes/api/adminServices.js");
+const pricing = require("./routes/api/pricing.js");
 //const posts = require("./routes/api/posts");
 
 // initialize app
@@ -38,6 +39,7 @@ require("./config/passport")(passport);
 // points url to relevant folder ie this is the users end point.
 app.use("/api/users", users);
 app.use("/api/services", services);
+app.use("/api/pricing", pricing);
 //app.use("/api/posts", posts);
 
 // Server static assets if in production.

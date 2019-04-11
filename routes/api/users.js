@@ -46,7 +46,8 @@ router.post("/register", (req, res) => {
           name: req.body.name,
           email: req.body.email,
           avatar,
-          password: req.body.password
+          password: req.body.password,
+          customer: true
         });
 
         if (newUser.password) {

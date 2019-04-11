@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.infoColumn {
+}
+
+.treatmentColumn {
+  display: inline-block;
+  @include text-detail;
+}
+
+.imageColumn {
+  align-content: center;
+  //max-height: 100px;
+  overflow: hidden;
+}
+
+.infoBtn {
+  display: block;
+  margin: auto;
+}
+.bookBtn {
+  display: block;
+  margin: auto;
+}
+

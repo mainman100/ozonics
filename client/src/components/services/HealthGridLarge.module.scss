@@ -1,0 +1,130 @@
+.gridMain {
+  padding: 0;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  max-width: 1000px;
+}
+
+.service {
+  margin-bottom: 10px;
+}
+.service:hover .subtitle {
+  color: darkblue;
+}
+.serviceLeft {
+  position: relative;
+  padding: 10px;
+  margin: 0px;
+  height: 420px;
+  width: 490px;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.serviceImg {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.serviceRight {
+  height: auto;
+  width: 490px;
+
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.serviceInfo {
+  height: 100%;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.title {
+  position: relative;
+  bottom: 0%;
+  text-transform: uppercase;
+  color: blue;
+  font: 1.25em bold HKGroteskReg, sans-serif;
+}
+.subtitle {
+  font: 1.5em bold HKGroteskReg, sans-serif;
+}
+.textMain {
+  font: 1em normal Ariel, sans-serif;
+  text-align: left;
+}
+.textSecondary {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .gridMain {
+    max-width: 640px;
+  }
+  .serviceLeft {
+    position: relative;
+    padding: 10px;
+    margin: 0px;
+    height: 320px;
+    width: 320px;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .serviceRight {
+    height: auto;
+    width: 320px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+  .serviceInfo {
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+
+  .serviceImg {
+    width: 260px;
+    height: 260px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 376px) {
+  .gridMain {
+    max-width: 375px;
+    margin: 0;
+  }
+  .serviceLeft {
+    position: relative;
+    padding: 10px;
+    margin: 0px;
+    height: 210px;
+    width: 375px;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .serviceRight {
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+  .serviceImg {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

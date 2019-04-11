@@ -1,0 +1,122 @@
+@import "../../../variables";
+
+#hair {
+  box-sizing: border-box;
+}
+
+#hair > div {
+  position: relative;
+  top: 25%;
+  color: rgb(0, 145, 0);
+  font: 2em bold 'Times New Roman', sans-serif;
+  @include mq($until: tablet) {
+    font-size: 1.25em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.5em;
+  }
+  @include mq($from: desktop) {
+    font-size: 2em;
+  }
+}
+
+#acne {
+  box-sizing: border-box;
+}
+
+#acne > div {
+  position: relative;
+  top: 20%;
+  color: rgb(255, 38, 0);
+  font: 2.1em bold HKGroteskReg, Ariel, sans-serif;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Safari */
+  transform: rotate(7deg);
+  @include mq($until: tablet) {
+    font-size: 1.4em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.75em;
+  }
+  @include mq($from: desktop) {
+    font-size: 2.1em;
+  }
+}
+
+#wrinkles {
+  box-sizing: border-box;
+}
+#wrinkles > div {
+  position: relative;
+  top: 50%;
+  color: rgb(10, 10, 10);
+  font: 2.25em bold HKGroteskReg, Ariel, sans-serif;
+  -ms-transform: rotate(-25deg); /* IE 9 */
+  -webkit-transform: rotate(-25deg); /* Safari */
+  transform: rotate(-25deg);
+  @include mq($until: tablet) {
+    font-size: 1.3em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.75em;
+  }
+  @include mq($from: desktop) {
+    font-size: 2.1em;
+  }
+}
+
+#age {
+  box-sizing: border-box;
+}
+#age > div {
+  color: rgb(12, 12, 61);
+  font: 1.95em bold Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  @include mq($until: tablet) {
+    font-size: 1.35em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.65em;
+  }
+  @include mq($from: desktop) {
+    font-size: 1.95em;
+  }
+}
+
+#tattoo {
+  box-sizing: border-box;
+}
+#tattoo > div {
+  position: relative;
+  top: 10%;
+  color: rgb(235, 26, 200);
+  font: 2.1em bold HKGroteskReg, Ariel, sans-serif;
+  @include mq($until: tablet) {
+    font-size: 1.15em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.75em;
+  }
+  @include mq($from: desktop) {
+    font-size: 2.1em;
+  }
+}
+
+#waist {
+  box-sizing: border-box;
+}
+#waist > div {
+  position: relative;
+  top: 35%;
+  color: rgb(20, 50, 70);
+  font: 1.7em bold HKGroteskReg, Ariel, sans-serif;
+  @include mq($until: tablet) {
+    font-size: 1.2em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.45em;
+  }
+  @include mq($from: desktop) {
+    font-size: 1.7em;
+  }
+}
+

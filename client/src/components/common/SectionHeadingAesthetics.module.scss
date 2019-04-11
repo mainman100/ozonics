@@ -1,0 +1,30 @@
+@import "../../variables";
+
+.sectionMain {
+  position: relative;
+  width: 100%;
+  @include mq($until: tablet) {
+    height: 4em;
+    padding-top: 1em;
+    margin-bottom: 1em;
+  }
+  @include mq($from: tablet) {
+    height: 4em;
+    padding-top: 1em;
+    margin-bottom: 2em;
+  }
+  @include mq($from: desktop) {
+    height: 4em;
+    padding-top: 1em;
+    margin-bottom: 3em;
+  }
+}
+
+.sectionTitle {
+  @include aesthetics-section-heading-main;
+}
+
+.sectionTitleShadow {
+  @include aesthetics-section-heading-main-shadow;
+  text-transform: uppercase;
+}

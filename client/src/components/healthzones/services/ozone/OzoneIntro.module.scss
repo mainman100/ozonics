@@ -1,0 +1,45 @@
+@import "../../../../variables";
+
+.intro {
+  @include text-detail;
+  text-align: justify;
+}
+
+.slogan {
+  color: rgb(192, 16, 16);
+  @include mq($until: tablet) {
+    font: 1.5em bold Ariel, sans-serif;
+    text-align: center;
+  }
+  @include mq($from: tablet) {
+    font: 1.75em bold Ariel, sans-serif;
+    text-align: right;
+  }
+  @include mq($from: desktop) {
+    font: 2em bold Ariel, sans-serif;
+    text-align: right;
+  }
+font-style: italic;
+}
+
+.sectionMain {
+  @include mq($until: tablet) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  @include mq($from: tablet) {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  @include mq($from: desktop) {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+.sectionIntroLeft {
+  img {
+    width: 100%;
+  }
+}
+

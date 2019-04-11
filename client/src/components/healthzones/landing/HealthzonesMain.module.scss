@@ -1,0 +1,82 @@
+@import '../../../variables';
+
+.healthSectionTop {
+  margin: 32px 0 0 0;
+  text-align: center;
+  font-family: Ariel, sans-serif;
+  background-image: url('https://s3-us-west-2.amazonaws.com/ozonics-commercial/sauna_bg.jpg');
+  background-size: cover;
+  background-position: 25% 10%;
+  background-origin: border-box;
+  height: 100vh;
+}
+
+.healthTitle {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  color: white;
+  background-color:rgba(240, 154, 168, 0.75);
+  width: 50%;
+  text-align: center;
+  // display: inline-block;
+  font: 3em bold HKGroteskReg, Ariel, sans-serif;
+  
+}
+
+.byOzonics{
+  position: absolute;
+  top: 95%;
+  right: 5%;
+  color: white;
+  background-color:rgba(240, 14, 51, 0.75);
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+  // display: inline-block;
+  font: 0.5em bold HKGroteskReg, Ariel, sans-serif;
+}
+.healthBasicPara {
+  text-align: justify;
+}
+.healthSloganPara {
+  position: absolute;
+  text-align: center;
+  width: 40%;
+  top: 60%;
+  font-size: 2em;
+  font-weight: normal;
+  right: 10%;
+  background-color: black;
+  color: white;
+}
+
+.healthConclusionPara {
+  color: rgb(10, 10, 124);
+}
+
+@media screen and (max-width: 768px) {
+  .healthTitle {
+    font: 1.75em bold HKGroteskReg, Ariel, sans-serif;
+    text-align: center;
+    left: 0;
+  }
+
+  .healthSloganPara {
+    position: absolute;
+    text-align: center;
+    width: 40%;
+    top: 60%;
+    font-size: 1.25em;
+    font-weight: normal;
+    right: 10%;
+    background-color: black;
+    color: white;
+  }
+}
+@media screen and (max-width: 425px) {
+  .healthTitle {
+    top: 15%;
+    font: 1.5em bold HKGroteskReg, Ariel, sans-serif;
+  }
+}

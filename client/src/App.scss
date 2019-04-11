@@ -1,0 +1,27 @@
+@import "variables";
+
+@font-face {
+  font-family: "HKGroteskReg";
+  src: url("./assets/fonts/HK_Grotesk/HKGrotesk-Regular.woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url('https://fonts.googleapis.com/css?family=Roboto');
+}
+
+@font-face {
+  font-family: "Codystar";
+  src: url('https://fonts.googleapis.com/css?family=Codystar')
+}
+  
+html {
+  font-family: $font-text;
+  text-align: justify;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

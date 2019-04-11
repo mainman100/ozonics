@@ -1,0 +1,36 @@
+@import "../../variables";
+
+.cardDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 300px;
+}
+
+.cardDiv .content {
+  flex: 1 1 auto;
+}
+.cardBody {
+  background-color: $color-bg-grey;
+  
+}
+
+ .cardBody:hover {
+  background-color: $color-health;
+  color: white;
+}
+
+.cardFooter {
+  color: $color-health;
+  font-weight: bold;
+}
+
+.subTitle {
+  min-height: 48px;
+}
+
+.btnMoreInfo {
+  display: block;
+  margin: auto;
+  margin-bottom: 1px;
+}

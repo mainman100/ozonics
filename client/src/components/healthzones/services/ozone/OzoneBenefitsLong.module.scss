@@ -1,0 +1,20 @@
+@import '../../../../variables';
+
+.title {
+  background-color: white;
+  border-top: 1px solid #ccc;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  font: 1.25em bold HKGroteskReg, Ariel, sans-serif;
+  transition: background-color .3s;
+  text-align: center;
+  @include mq($until: tablet) {
+    font-size: 1em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.5em;
+  }
+  @include mq($from: desktop) {
+    
+  }
+}

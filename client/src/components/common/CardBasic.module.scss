@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.cardDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.cardDiv .content {
+  flex: 1 1 auto;
+}
+.cardBody {
+  //background-color: $color-bg-grey;
+  
+}
+
+ .cardBody:hover {
+  background-color: $color-aesthetics;
+  color: white;
+}
+
+
+ 

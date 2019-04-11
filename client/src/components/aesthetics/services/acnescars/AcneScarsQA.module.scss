@@ -1,0 +1,27 @@
+.heading {
+  margin-top: 32px;
+  font: 2em bold HKGroteskReg, Ariel, sans-serif;
+}
+
+.question {
+  background-color: #fafafa;
+  border-top: 1px solid #ccc;
+  color: rgb(23, 8, 233);
+  padding: 20px;
+  font: 1em bold HKGroteskReg, Ariel, sans-serif;
+  transition: background-color .3s;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font: 1.75em bold HKGroteskReg, Ariel, sans-serif;
+    text-align: center;
+    left: 0;
+  }
+
+}
+@media screen and (max-width: 425px) {
+  .heading {
+    font: 1.5em bold HKGroteskReg, Ariel, sans-serif;
+  }
+}

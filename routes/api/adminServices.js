@@ -15,7 +15,6 @@ const validateServicesInput = require("../../validation/services");
 
 router.get(
   "/all",
-  passport.authenticate("jwt", { session: false }),
   (req, res) => {
     const errors = {};
     Services.find()

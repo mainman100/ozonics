@@ -1,0 +1,55 @@
+@import '../../variables';
+
+.sectionMain {
+  padding: 0;
+  background-color: $color-bg-grey;
+ // background-image:url('../../assets/img/bg/white-background-marble.jpg');
+}
+
+.sectionHeader {
+  @include health-section-heading-main;
+}
+
+.introSlogan {
+  @include health-slogan;
+}
+
+.introMain {
+  width: 75%;
+  display: block;
+  margin: auto;
+  @include mq($until: tablet) {
+    width: 95%;
+  }
+  @include mq($from: tablet) {
+    width: 95%;
+  }
+  @include mq($from: desktop) {
+    width: 75%;
+  }
+}
+
+.introDetail {
+  @include text-detail;
+  text-align: justify;
+  @include mq($until: tablet) {
+    font-size: 1.15em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.25em;
+  }
+  @include mq($from: desktop) {
+    font-size: 1.5em;
+  }
+}
+
+.healthGrid {
+  padding: 1em;
+  margin: 0;
+}
+
+
+
+
+
+

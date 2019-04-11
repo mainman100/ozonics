@@ -1,0 +1,27 @@
+@import '../../variables';
+
+.headingLeft {
+  
+  @include mq($until: tablet) {
+    text-align: center;
+  }
+  @include mq($from: tablet) {
+    text-align: left;
+  }
+  @include mq($from: desktop) {
+    text-align: left;
+  }
+}
+
+.footer {
+  
+  @include mq($until: tablet) {
+    text-align: center;
+  }
+  @include mq($from: tablet) {
+    text-align: center;
+  }
+  @include mq($from: desktop) {
+    text-align: center;
+  }
+}

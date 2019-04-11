@@ -1,0 +1,17 @@
+@import "../../variables";
+
+.gridMain {
+  text-align: center;
+}
+
+.servicesGrid {
+  display: flex;
+  justify-content: center;
+}
+
+.servicesGridHeading {
+  @include aesthetics-section-heading-main
+}
+
+
+

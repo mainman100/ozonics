@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.btnBook {
+  width: 180px;
+  @include mq($until: tablet) {
+    width: 180px;
+  }
+  @include mq($from: tablet) {
+    width: 180px;
+  }
+  @include mq($from: desktop) {
+    width: 180px;
+  }
+}
+
+.sectionMain {
+  text-align: center;
+}

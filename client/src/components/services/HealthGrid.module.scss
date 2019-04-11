@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.gridMain {
+  padding: 0;
+  text-align: center;
+ // background-color: lighten($color-health, 43%);
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.servicesGrid {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  max-height: 300px;
+  max-width: 300px; 
+  border: 2px solid rgb(255, 151, 151);
+  margin: auto;
+}
+
+@media screen and (max-width: 601px) {
+  .gridMain {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 301px) {
+  .gridMain {
+    max-width: 300px;
+  }
+}
+

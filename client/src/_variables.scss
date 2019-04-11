@@ -1,0 +1,243 @@
+@import "~sass-mq";
+
+$mq-breakpoints: (
+  mobile: 320px,
+  tablet: 740px,
+  desktop: 980px,
+  wide: 1300px,
+  // Tweakpoints
+  desktopAd: 810px,
+  mobileLandscape: 480px
+);
+
+$mq-responsive: true;
+
+$mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
+
+$font-section-heading: HKGroteskReg, Ariel, sans-serif;
+$font-text: Roboto, sans-serif;
+$font-shadow: "Codystar", cursive;
+$font-text-large: Helvetica, sans-serif;
+$color-health: #000000;
+$color-health-light: rgba(0, 0, 0, 0.1);
+$color-aesthetics: #000000;
+$color-aesthetics-light: rgba(0, 0, 0, 0.05);
+$color-dark: #4d4949;
+$color-bg-grey: rgba(0, 0, 0, 0.1);
+$size-basic: 1em;
+
+@mixin text-detail {
+  font: calc(#{$size-basic}*1.5) normal $font-text;
+
+  @include mq($until: tablet) {
+    font-size: $size-basic;
+  }
+  @include mq($from: tablet) {
+    font-size: calc(#{$size-basic}*1.15);
+  }
+  @include mq($from: desktop) {
+    font-size: calc(#{$size-basic}*1.25);
+  }
+}
+
+@mixin text-detail-small {
+  font: calc(#{$size-basic}*1) normal $font-text;
+
+  @include mq($until: tablet) {
+    font-size: calc(#{$size-basic}*0.9);
+  }
+  @include mq($from: tablet) {
+    font-size: calc(#{$size-basic}*0.95);
+  }
+  @include mq($from: desktop) {
+    font-size: calc(#{$size-basic}*1);
+  }
+}
+
+@mixin text-detail-large {
+  font: calc(#{$size-basic}*1) normal $font-text;
+
+  @include mq($until: tablet) {
+    font-size: calc(#{$size-basic}*1.25);
+  }
+  @include mq($from: tablet) {
+    font-size: calc(#{$size-basic}*1.5);
+  }
+  @include mq($from: desktop) {
+    font-size: calc(#{$size-basic}*1.75);
+  }
+}
+
+@mixin aesthetics-slogan {
+  @include text-detail-large;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+}
+@mixin health-slogan {
+  font: 2em bold italic $font-text;
+  color: darken($color-health, 10%);
+  text-align: center;
+  margin-bottom: 1em;
+  @include mq($until: tablet) {
+    font-size: 1.25em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.5em;
+  }
+  @include mq($from: desktop) {
+    font-size: 2em;
+  }
+}
+
+@mixin general-slogan {
+  font: 2em bold italic $font-text;
+  color: darken($color-dark, 10%);
+  text-align: center;
+  margin-bottom: 1em;
+  @include mq($until: tablet) {
+    font-size: 1.25em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.5em;
+  }
+  @include mq($from: desktop) {
+    font-size: 2em;
+  }
+}
+
+@mixin section-heading-main {
+  font: calc(#{$size-basic}*3) bold $font-section-heading;
+  width: 100%;
+  text-align: center;
+  @include mq($until: tablet) {
+    font-size: calc(#{$size-basic}*1.5);
+  }
+  @include mq($from: tablet) {
+    font-size: calc(#{$size-basic}*2);
+  }
+  @include mq($from: desktop) {
+    font-size: calc(#{$size-basic}*3);
+  }
+}
+
+@mixin section-heading-main-shadow {
+  font: calc($size-basic*2*2) bold $font-shadow;
+  letter-spacing: 0.1em;
+  width: 100%;
+  text-align: center;
+  @include mq($until: tablet) {
+    font-size: calc(#{$size-basic}*1.5*1.25);
+  }
+  @include mq($from: tablet) {
+    font-size: calc(#{$size-basic}*2*1.25);
+  }
+  @include mq($from: desktop) {
+    font-size: calc(#{$size-basic}*3*1.25);
+  }
+}
+
+@mixin aesthetics-section-heading-main {
+  @include section-heading-main;
+  color: $color-aesthetics;
+}
+
+@mixin aesthetics-section-heading-main-shadow {
+  @include section-heading-main-shadow;
+  color: $color-aesthetics-light;
+}
+
+@mixin aesthetics-section-heading-sub {
+  font: 2em bold $font-section-heading;
+  color: lighten($color-aesthetics, 10%);
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  @include mq($until: tablet) {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  @include mq($from: desktop) {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@mixin health-section-heading-main {
+  @include section-heading-main;
+  color: $color-health;
+}
+
+@mixin health-section-heading-main-shadow {
+  @include section-heading-main-shadow;
+  color: $color-health-light;
+}
+
+@mixin health-section-heading-sub {
+  font: 2em bold $font-section-heading;
+  color: lighten($color-health, 10%);
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  @include mq($until: tablet) {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  @include mq($from: desktop) {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@mixin general-section-heading-main {
+  font: 3em bold $font-section-heading;
+  color: $color-dark;
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+
+  @include mq($until: tablet) {
+    font-size: 1.5em;
+    margin-top: 0.25em;
+  }
+  @include mq($from: tablet) {
+    font-size: 2em;
+    margin-top: 0.5em;
+  }
+  @include mq($from: desktop) {
+    font-size: 3em;
+    margin-top: 1em;
+  }
+}
+
+@mixin basic-text {
+  font: 1.5em bold $font-text;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  text-align: center;
+  @include mq($until: tablet) {
+    font-size: 1em;
+  }
+  @include mq($from: tablet) {
+    font-size: 1.25em;
+  }
+  @include mq($from: desktop) {
+    font-size: 1.5em;
+  }
+}

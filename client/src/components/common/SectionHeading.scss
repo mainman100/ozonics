@@ -1,0 +1,17 @@
+@import "../../variables";
+
+#title1, #title2 {
+  position: absolute;
+}
+
+#title2 {
+  @include mq($until: tablet) {
+    top: 40%;
+  }
+  @include mq($from: tablet) {
+    top: 60%;
+  }
+  @include mq($from: desktop) {
+    top: 65%;
+  }
+}

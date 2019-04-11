@@ -1,0 +1,17 @@
+@import '../../../variables';
+
+.gridMain {
+  padding: 0;
+  margin: 0;
+}
+
+.dataGrid {
+  display: flex;
+  justify-content: center;
+} 
+
+.sectionHeader {
+  @include health-section-heading-sub;
+}
+
+

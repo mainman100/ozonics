@@ -1,0 +1,5 @@
+@import "../../../variables";
+
+.sectionHeading {
+  @include aesthetics-section-heading-main;
+  text-align: center;}

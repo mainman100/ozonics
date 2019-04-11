@@ -1,0 +1,25 @@
+@import "../../../variables";
+
+.byOzonics {
+position: relative;
+color: $color-aesthetics;
+margin-top: -0.5em;
+left: 60%;
+  font-size: 1.5em;
+}
+
+.sectionHeading {
+  @include aesthetics-section-heading-main;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.gridMain {
+  padding: 0;
+}
+
+.dataGrid {
+  display: flex;
+  justify-content: center;
+} 
+
