@@ -2,9 +2,8 @@ import React from "react";
 import styles from "./LandingAesthetics.module.scss";
 import classnames from "classnames";
 import AestheticsGrid from "../services/AestheticsGrid";
-import SectionHeadingAesthetics from '../common/SectionHeadingAesthetics';
+import SectionHeadingAesthetics from "../common/SectionHeadingAesthetics";
 import LandingAestheticsQualities from "./LandingAestheticsQualities";
-
 
 function LandingAesthetics(props) {
   return (
@@ -12,7 +11,10 @@ function LandingAesthetics(props) {
     It is a container (container-fluid) with a row for each section*/
     <div className={classnames("container-fluid", styles.sectionMain)}>
       {/* Aesthetics Header */}
-<SectionHeadingAesthetics heading="precision aesthetics" shadowheading=" aesthetics"/>
+      <SectionHeadingAesthetics
+        heading="precision aesthetics"
+        headingshadow=" aesthetics"
+      />
       {/* Aesthetics Introduction */}
       <div
         className={classnames("row", "no-gutters", "pb-5", styles.introMain)}
@@ -36,12 +38,12 @@ function LandingAesthetics(props) {
 
       {/* Aesthetics Qualities - the component jsx is a flex container */}
       <LandingAestheticsQualities />
-      
+
       {/* Aesthetics Services Header */}
       <div className="row" />
       {/* Aesthetics Services */}
       <div className={classnames("row", "pb-4", styles.aestheticsGrid)}>
-        <AestheticsGrid showHeading={true}/>
+        <AestheticsGrid showHeading={true} />
       </div>
     </div>
   );
