@@ -12,7 +12,7 @@ function LandingAesthetics(props) {
     It is a container (container-fluid) with a row for each section*/
     <div className={classnames("container-fluid", styles.sectionMain)}>
       {/* Aesthetics Header */}
-<SectionHeadingAesthetics heading="precision aesthetics"/>
+<SectionHeadingAesthetics heading="precision aesthetics" shadowheading=" aesthetics"/>
       {/* Aesthetics Introduction */}
       <div
         className={classnames("row", "no-gutters", "pb-5", styles.introMain)}
