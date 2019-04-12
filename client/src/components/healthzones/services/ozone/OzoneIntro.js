@@ -29,13 +29,13 @@ class OzoneIntro extends Component {
               styles.sectionIntroRight
             )}
           >
-            <p className={classnames("m-0", "pb-4", styles.slogan)}>health to the power of 03</p>            
+            <p className={classnames("m-0", "pb-4", styles.slogan)}>health to the power of 0<sup>3</sup></p>            
             <p className={classnames("m-0", "p-1", styles.intro)}>
               {content}
             </p>
           </div>
           
-        <BookButtonSection />
+        <BookButtonSection showConsult={false} />
         
         </div>
         
