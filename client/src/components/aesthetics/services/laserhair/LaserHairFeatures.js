@@ -35,7 +35,7 @@ class LaserHairFeatures extends Component {
 
     return (
       <div className={classnames("container", styles.sectionMain)}>
-        <SectionHeadingAesthetics heading="features" />
+        <SectionHeadingAesthetics heading="features" shadowheading="features"/>
         <div className="flex-container">
           <div className={classnames("row", styles.dataGrid)}>{dataItems}</div>
         </div>

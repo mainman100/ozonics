@@ -27,7 +27,7 @@ class HealthzonesQualities extends Component {
 
     return (
       <div className="container-fluid mb-5">
-      <SectionHeadingHealth heading="great service"/>
+      <SectionHeadingHealth heading="great service" shadowheading="great service"/>
       <div className={classnames("flex-container", styles.gridMain)}>
         <div className={classnames("row", "no-gutters", styles.dataGrid)}>
           {dataItems}

@@ -28,7 +28,7 @@ class LaserHairQA extends Component {
     
     return (
       <div className="container mt-2 mb-2">
-        <SectionHeadingAesthetics heading="q and a" />
+        <SectionHeadingAesthetics heading="q &#38; a" shadowheading="q &#38; a" />
         <Accordion >{dataItems}</Accordion>
       </div>
     );

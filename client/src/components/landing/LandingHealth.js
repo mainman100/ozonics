@@ -13,7 +13,7 @@ function LandingHealth() {
       className={classnames("container-fluid ", styles.sectionMain)}
     >
       {/* Health Header */}
-<SectionHeadingHealth heading="zones of health"/>
+<SectionHeadingHealth heading="zones of health" shadowheading="zoh"/>
       {/* Health Introduction */}
       <div className={classnames("row no-gutters pb-5", styles.introMain)}>
         <div className="p-3 text-center">
