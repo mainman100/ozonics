@@ -14,10 +14,10 @@ class OzoneIntro extends Component {
       content = data.map((x, index) => <p key={index} className="text-justify">{x}</p>);
     return (
       <div className={classnames("container", styles.sectionMain)}>      
-        <div className="row">
+        <div className={classnames("row", styles.mainRow)}>
           <div className={classnames(
               "col-12",
-              "col-md-4",
+              "col-md-4", 
               styles.sectionIntroLeft
             )}>
             <img src="https://s3-us-west-2.amazonaws.com/ozonics-commercial/ozone-3-400x400.jpg" alt=""/>
