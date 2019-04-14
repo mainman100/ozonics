@@ -44,7 +44,7 @@ class LaserHairIntro extends Component {
             </p>
           </div>
 
-          <BookButtonSection pricingLink="/pricing/laserhair"/>
+          <BookButtonSection pricingLink="/pricing/laserhair" showConsult={true}/>
         </div>
       </div>
     );

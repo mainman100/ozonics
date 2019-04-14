@@ -22,6 +22,7 @@ class LandingAestheticsQualities extends Component {
         icon={datum.icon}
         showIcon={true}
         showFooter={true}
+        cbTheme="theme2"
         
       />
     ));

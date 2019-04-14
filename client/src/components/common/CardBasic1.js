@@ -15,7 +15,8 @@ const CardBasic1 = ({
   showIcon,
   showTitle,
   showSubtitle,
-  showFooter
+  showFooter,
+  cbTheme
 }) => {
   return (
     <div
@@ -37,7 +38,7 @@ const CardBasic1 = ({
           </div>
         ) : null}
         <div
-          className={classnames("card-body", "text-justify", styles.cardBody)}
+          className={classnames("card-body", "cb-" + cbTheme, "text-justify", styles.cardBody)}
         >
           {showTitle ? <h5 className={classnames("card-title", "text-center", styles.cardTitle)}>{title}</h5> : null}
           {showSubtitle ? (
@@ -65,7 +66,8 @@ CardBasic1.propTypes = {
   showSubtitle: PropTypes.bool,
   showTitle: PropTypes.bool,
   showFooter: PropTypes.bool,
-  showIcon: PropTypes.bool
+  showIcon: PropTypes.bool,
+  cbTheme: PropTypes.string
 };
 
 CardBasic1.defaultProps = {
@@ -74,7 +76,8 @@ CardBasic1.defaultProps = {
   showTitle: true,
   showSubtitle: false,
   showIcon: false,
-  showFooter: false
+  showFooter: false,
+  cbTheme: "theme1"
 };
 
 export default CardBasic1;

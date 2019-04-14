@@ -10,6 +10,7 @@
   @include mq($until: tablet) {
     font: 1.5em bold Ariel, sans-serif;
     text-align: center;
+    padding-top: 1em;
   }
   @include mq($from: tablet) {
     font: 1.75em bold Ariel, sans-serif;

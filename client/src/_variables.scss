@@ -24,6 +24,7 @@ $color-aesthetics: #000000;
 $color-aesthetics-light: rgba(0, 0, 0, 0.05);
 $color-dark: #4d4949;
 $color-bg-grey: rgba(0, 0, 0, 0.1);
+$color-heading-shadow: rgba(255, 0, 0, 0.3);
 $size-basic: 1em;
 
 @mixin text-detail {
@@ -144,7 +145,8 @@ $size-basic: 1em;
 
 @mixin aesthetics-section-heading-main-shadow {
   @include section-heading-main-shadow;
-  color: $color-aesthetics-light;
+  //color: $color-aesthetics-light;
+  color: $color-heading-shadow;
 }
 
 @mixin aesthetics-section-heading-sub {
@@ -178,7 +180,8 @@ $size-basic: 1em;
 
 @mixin health-section-heading-main-shadow {
   @include section-heading-main-shadow;
-  color: $color-health-light;
+  //color: $color-health-light;
+  color: $color-heading-shadow;
 }
 
 @mixin health-section-heading-sub {

@@ -1,16 +1,9 @@
-/* .card-title {
-  min-height: 50px;
+@import "../../variables";
+
+.cb-theme1 {
+  background-color: white;
 }
 
-.card-footer {
-  background-color: lightblue;
+.cb-theme2 {
+  background-color: $color-bg-grey;
 }
-
-@media screen and (max-width: 768px) {
-  .card-text {
-    min-height: 120px;
-  }
-  .card-body {
-    min-height: 100px;
-  }
-} */

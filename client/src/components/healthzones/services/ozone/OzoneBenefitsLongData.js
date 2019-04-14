@@ -25,10 +25,10 @@ export const ozoneBenefits = [
     id: 3,
     benefit: "Skin Conditions",
     benefits: [
-      "Ozone Therapy does more than improve the complexion. It is very effective in improving specific skin conditions. Indeed, Health Zones regards this as possibly being the most important aspect of Ozone Sauna:",
+      "Ozone Therapy does more than improve the complexion. It is very effective in improving specific skin conditions. Indeed, Ozonics regards this as possibly being the most important aspect of Ozone Sauna:",
       "\u2736 ACNE - Not only body acne, but also face acne, even though the ozone does not touch your face. This is through the systemic effects of ozone.",
       "\u2736 SUNBURN - A small course, or even a single session, of Ozone Sauna can alleviate the effects of sunburn. Of course, if your sunburn is bad enough to warrant seeing a doctor, then that is what you should do, before or in addition to undertaking Ozone Sauna.",
-      "\u2736 ULCERS - A course of Ozone Therapy can be very effective is treating ulcers. Bad persistent ulcers are likely to require the more focused therapy that the O Zones's Specialist Unit can provide.",
+      "\u2736 ULCERS - A course of Ozone Therapy can be very effective is treating ulcers. ",
       "\u2736 CELLULITIS - This is a bacterial condition, and Ozone Sauna can be effective in supplementing conventional anti-biotics. We stress that it is critical that the client sees a doctor and receives conventional medical treatment, and that Ozone Sauna should only be used as a complementary therapy. Cellulitis is a dangerous condition that typically requires a course of anti-biotics."
     ]
   },
@@ -43,10 +43,10 @@ export const ozoneBenefits = [
     id: 5,
     benefit: "Medical Conditions",
     benefits: [
-      "Ozonics is more circumspect than most Ozone Therapy providers in making claims about the ability of Ozone to treat serious medical conditions. However, most Ozone Therapy practitioners, are confident that Ozone Therapy, including Ozone Sauna, can be effective in alleviating the effects of a number of serious health conditions. Ozonics urges potential clients interested in undertaking a course of Ozone Sauna, because they have one of these conditions, to do appropriate research, including talking to their doctor. The main health conditions that Ozone Sauna may alleviate are considered to be :",
+      "Ozonics is more circumspect than most Ozone Therapy providers in making claims about the ability of Ozone to treat serious medical conditions. However, most Ozone Therapy practitioners, are confident that Ozone Therapy, including Ozone Sauna, can be effective in alleviating the effects of a number of serious health conditions. Ozonics urges potential clients interested in undertaking a course of Ozone Sauna, because they have one of these conditions, to do appropriate research, including talking to their doctor. Major health conditions that Ozone Sauna may alleviate include:",
       "\u2736 LYME DISEASE - The mechanism is not known, but it has been reported that Ozone Sauna alleviates the symptoms of Lyme Disease.",
-      "\u2736 DIABETES  - Diabetes sufferers who have persistent ulcers, such as Diabetic Foot Ulcers, may benefit from a course of Ozone Sauna, contemporaneously with other suitable treatments, such as the conventional medical treatment they are receiving or by Health Zones' Specialty Unit. The systemic effects of Ozone Sauna may assist in reducing the symptoms of diabetes such as reducing the incidence and severity of ulcers.",
-      "\u2736 CANCER  - Ozone Sauna can help the client manage the side effects of contemporaneous medical treatment (chemo or radiotherapy)."
+      "\u2736 DIABETES  - Diabetes sufferers who have persistent ulcers, such as Diabetic Foot Ulcers, may benefit from a course of Ozone Sauna, contemporaneously with other suitable treatments. The anti-bacterial effects act on the surface of the ulcer to assist in healing, while the systemic effects of Ozone Sauna may assist in reducing the incidence and severity of ulcers.",
+      "\u2736 CANCER  - Ozone Sauna can help manage the side effects of contemporaneous medical treatment (chemo or radiotherapy)."
     ]
   }
 ];

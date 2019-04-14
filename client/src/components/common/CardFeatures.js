@@ -10,19 +10,20 @@ const CardFeatures = ({
   icon,
   showIcon,
   showTitle,
-  showSubtitle
+  showSubtitle,
+  iconColor
 }) => {
   return (
     <div className={classnames(styles.cardDiv)}>
       {showIcon ? (
-        <div class={classnames("text-center")}>
-          <i className="large material-icons">{icon}</i>
+        <div className={classnames("text-center")}>
+        <h4><i style={{color: iconColor}} className={classnames(icon)} /></h4>
         </div>
       ) : null}
       <div
         className={classnames(styles.content, "text-justify", styles.cardBody)}
       >
-        {showTitle ? <h4 className="mt-2 text-center">{title}</h4> : null}
+        {showTitle ? <h5 className="mt-2 text-center">{title}</h5> : null}
         {showSubtitle ? (
           <h6 className={classnames("mt-2", "text-center", styles.subTitle)}>
             {subtitle}

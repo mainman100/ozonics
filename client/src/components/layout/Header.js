@@ -22,7 +22,7 @@ class Header extends Component {
     const services = showServices;
 
     const authLinks = (
-      <Nav className="ml-auto">
+      <Nav>
         <NavDropdown title="Account" id="basic-nav-dropdown">
           <NavDropdown.Item href="/customer/dashboard">
             Your Account
@@ -44,7 +44,7 @@ class Header extends Component {
     );
 
     const guestLinks = (
-      <Nav className="ml-auto">
+      <Nav>
         <NavDropdown title="Account" id="basic-nav-dropdown">
           <NavDropdown.Item href="/register">Create Account</NavDropdown.Item>
           <NavDropdown.Item href="/login">Customer Login</NavDropdown.Item>
@@ -65,10 +65,15 @@ class Header extends Component {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
+            <Nav className="w-100 mr-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <NavDropdown title="Aesthetics" id="basic-nav-dropdown">
-                <NavDropdown.Item className={classnames(styles.aestheticsOverview)} href="/aesthetics">Overview</NavDropdown.Item>
+                <NavDropdown.Item
+                  className={classnames(styles.aestheticsOverview)}
+                  href="/aesthetics"
+                >
+                  Overview
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 {services.laserhair ? (
                   <NavDropdown.Item
@@ -136,7 +141,10 @@ class Header extends Component {
                 ) : null}
               </NavDropdown>
               <NavDropdown title="Health Zones" id="basic-nav-dropdown">
-                <NavDropdown.Item className={classnames(styles.healthOverview)} href="/healthzones">
+                <NavDropdown.Item
+                  className={classnames(styles.healthOverview)}
+                  href="/healthzones"
+                >
                   Overview
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -183,14 +191,29 @@ class Header extends Component {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Navbar.Text
-              style={{ color: "yellow", textTransform: "uppercase" }}
-              href="/location"
-            >
-              Lake Nona, Orlando
-            </Navbar.Text>
+
+          <Navbar.Collapse
+            className="ml-auto justify-content-end"
+            id="basic-navbar-nav"
+          >
+            <Nav>
+              <Nav.Link
+                style={{
+                  color: "yellow",
+                  textTransform: "uppercase",
+                  marginRight: "40px"
+                }}
+                href="/location"
+              >
+                Lake Nona, Orlando
+              </Nav.Link>
+
+              <Nav.Link href="/location">Locations</Nav.Link>
+
+              <Nav.Link href="/contact">Contact</Nav.Link>
+            </Nav>
           </Navbar.Collapse>
+
           {isAuthenticated ? (
             <Navbar.Collapse id="basic-navbar-nav">
               <Navbar.Text style={{ textTransform: "capitalize " }}>
@@ -199,7 +222,13 @@ class Header extends Component {
             </Navbar.Collapse>
           ) : null}
 
-          <Navbar.Collapse className={classnames(styles.accountDropdown)} id="basic-navbar-nav">
+          <Navbar.Collapse
+            className={classnames(
+              "justify-content-end ml-auto",
+              styles.accountDropdown
+            )}
+            id="basic-navbar-nav"
+          >
             {isAuthenticated ? authLinks : guestLinks}
             {/*  <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">

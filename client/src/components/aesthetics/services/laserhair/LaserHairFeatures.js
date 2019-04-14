@@ -28,6 +28,7 @@ class LaserHairFeatures extends Component {
           title={datum.title}
           text={content}
           icon={datum.icon}
+          iconColor="salmon"
         />
       );
       dataItems.push(newItem);

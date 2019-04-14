@@ -8,7 +8,7 @@ export const featuresLaserHair = [
     text: [
       "State of the art cosmetic laser system provides as short as possible treatment times with as little discomfort as possible"
     ],
-    icon: "brush"
+    icon: "fas fa-paint-brush"
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const featuresLaserHair = [
     text: [
       "Our commercial laser system is the most effective method for the permanent reduction or removal of hair, far more effective than IPL or home use lasers"
     ],
-    icon: "show_chart"
+    icon: "fas fa-thumbs-up"
   },
   {
     id: 3,
@@ -24,6 +24,6 @@ export const featuresLaserHair = [
     text: [
       "Each treatment includes an ozone sauna session, an experience that will relax and sooth"
     ],
-    icon: "exposure_zero"
+    icon: "fas fa-circle"
   }
 ];

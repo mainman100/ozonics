@@ -1,10 +1,9 @@
-/* .card {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  width: 300px;
-} */
+@import "../../variables";
 
-/* .card .content {
-  flex: 1 1 auto;
-} */
+.cb-theme1 {
+  background-color: white;
+}
+
+.cb-theme2 {
+  background-color: $color-bg-grey;
+}

@@ -17,7 +17,7 @@ function LandingHealth() {
         <div className="p-3 text-center">
           <p className={classnames(styles.introSlogan)}>
             {" "}
-            Improve and maintain your health with our range of Complementary
+            Improve and maintain your health with our range of
             Health Therapies
           </p>
           <p className={classnames(styles.introDetail)}>

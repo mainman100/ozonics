@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./CardBasic.module.scss";
+import './CardBasic.scss';
 import classnames from "classnames";
 
 const CardBasic = ({
@@ -14,7 +15,8 @@ const CardBasic = ({
   showIcon,
   showTitle,
   showSubtitle,
-  showFooter
+  showFooter,
+  cbTheme
 }) => {
   return (
     <div className={classnames("card", styles.cardDiv)}>
@@ -28,7 +30,7 @@ const CardBasic = ({
       ) : null}
       <div
         className={classnames(
-          "card-body",
+          "card-body", "cb-" + cbTheme,
           styles.content,
           "text-justify",
           styles.cardBody
@@ -59,7 +61,8 @@ CardBasic.propTypes = {
   showSubtitle: PropTypes.bool,
   showTitle: PropTypes.bool,
   showFooter: PropTypes.bool,
-  showIcon: PropTypes.bool
+  showIcon: PropTypes.bool,
+  cbTheme: PropTypes.string
 };
 
 CardBasic.defaultProps = {
@@ -68,7 +71,8 @@ CardBasic.defaultProps = {
   showTitle: true,
   showSubtitle: false,
   showIcon: false,
-  showFooter: false
+  showFooter: false,
+  cbTheme: "theme1"
 };
 
 export default CardBasic;
