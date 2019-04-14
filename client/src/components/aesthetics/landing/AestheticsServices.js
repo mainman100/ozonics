@@ -25,7 +25,7 @@ class AestheticsServices extends Component {
 
     return (
       <div className="container mt-2 ">
-       <SectionHeadingAesthetics heading="which is right for you?" shadowheading="choose"/>
+       <SectionHeadingAesthetics heading="which is right for you?" headingshadow="choose"/>
         <div className="row no-gutters">{dataItems}</div>
       </div>
     );
