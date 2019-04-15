@@ -20,7 +20,7 @@ export default class OzoneHeadlines extends Component {
       ));
 
       newItem = (
-        <CardBasic1 key={datum.id} title={title} text={content} showTitle={true} />
+        <CardBasic1 key={datum.id} title={title} text={content} showTitle={true} cbTheme="theme2" />
       );
       dataItems.push(newItem);
     });
