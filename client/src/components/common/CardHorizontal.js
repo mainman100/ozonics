@@ -56,7 +56,7 @@ const CardHorizontal = ({
           )}
         >
           <div className={("card-block", "px-3", styles.info)}>
-            <p className="card-text p-2">{info} </p>
+            <p className="card-text p-2 text-justify">{info} </p>
           </div>
         </div>
 
