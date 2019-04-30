@@ -1,0 +1,132 @@
+@import '../../../../variables';
+
+#a {
+ // background-color: aquamarine;
+  box-sizing: border-box;
+  height: 150px;
+}
+
+#a > div {
+  position: relative;
+  top: 50%;
+  color: rgb(0, 0, 0);
+  @include mq($until: tablet) {
+    font: 1.25em bold Arial, Helvetica, sans-serif;
+  }
+  @include mq($from: tablet) {
+    font: 1.5em bold Arial, Helvetica, sans-serif;
+  }
+  @include mq($from: desktop) {
+    font: 2em bold Arial, Helvetica, sans-serif;
+  }
+}
+
+#b {
+//  background-color: rgb(230, 245, 25);
+  box-sizing: border-box;
+}
+
+#b > div {
+  position: relative;
+  top: 30%;
+  color: #ff7b00d7;
+  @include mq($until: tablet) {
+    font: 1.35em bold Impact, Charcoal, sans-serif;
+  }
+  @include mq($from: tablet) {
+    font: 1.6em bold Impact, Charcoal, sans-serif;
+  }
+  @include mq($from: desktop) {
+    font: 2.1em bold Impact, Charcoal, sans-serif;
+  }
+  
+  -ms-transform: rotate(-7deg); /* IE 9 */
+  -webkit-transform: rotate(-7deg); /* Safari */
+  transform: rotate(-7deg);
+}
+
+#c {
+ // background-color: rgb(153, 61, 206);
+  box-sizing: border-box;
+}
+#c > div {
+  position: relative;
+  top: 20%;
+  color: rgb(0, 0, 0);
+  @include mq($until: tablet) {
+    font: 1.45em bold Verdana, Geneva, sans-serif;
+  }
+  @include mq($from: tablet) {
+    font: 1.75em bold Verdana, Geneva, sans-serif;
+  }
+  @include mq($from: desktop) {
+    font: 2.25em bold Verdana, Geneva, sans-serif;
+  }
+  
+  -ms-transform: rotate(25deg); /* IE 9 */
+  -webkit-transform: rotate(25deg); /* Safari */
+  transform: rotate(25deg);
+}
+
+#d {
+ // background-color: rgb(241, 138, 20);
+  box-sizing: border-box;
+}
+#d > div {
+  position: relative;
+  top: 0%;
+  color: rgb(243, 12, 12);
+  @include mq($until: tablet) {
+    font: 1.3em bold HKGroteskReg, Ariel, sans-serif;
+  }
+  @include mq($from: tablet) {
+    font: 1.8em bold HKGroteskReg, Ariel, sans-serif;
+  }
+  @include mq($from: desktop) {
+    font: 2.3em bold HKGroteskReg, Ariel, sans-serif;
+  }
+}
+
+#e {
+ // background-color: rgb(63, 236, 47);
+  box-sizing: border-box;
+}
+#e > div {
+  position: relative;
+  top: 5%;
+  color: rgb(24, 5, 21);
+  @include mq($until: tablet) {
+    font: 1em bold Palatino, URW Palladio L, serif;
+  }
+  @include mq($from: tablet) {
+    font: 1.5em bold Palatino, URW Palladio L, serif;
+  }
+  @include mq($from: desktop) {
+    font: 2em bold Palatino, URW Palladio L, serif;
+  }
+}
+
+#f {
+ // background-color: rgb(163, 97, 97);
+  box-sizing: border-box;
+ 
+}
+#f > div {
+  position: relative;
+  top: 14%;
+  color: rgb(0, 0, 0);
+  @include mq($until: tablet) {
+    font: 1.15em bold Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  }
+  @include mq($from: tablet) {
+    font: 1.45em bold Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  }
+  @include mq($from: desktop) {
+    font: 1.8em bold Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  }
+  
+  -ms-transform: rotate(25deg); /* IE 9 */
+  -webkit-transform: rotate(25deg); /* Safari */
+  transform: rotate(25deg);
+}
+

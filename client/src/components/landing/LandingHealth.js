@@ -11,7 +11,7 @@ function LandingHealth() {
     It is a container (container-fluid) with a row for each section*/
     <div className={classnames("container-fluid ", styles.sectionMain)}>
       {/* Health Header */}
-      <SectionHeadingHealth heading="zones of health" headingshadow="zoh" />
+      <SectionHeadingHealth heading="zones" headingshadow="health" />
       {/* Health Introduction */}
       <div className={classnames("row no-gutters pb-5", styles.introMain)}>
         <div className="p-3 text-center">

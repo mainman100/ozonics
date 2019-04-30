@@ -36,7 +36,7 @@ class HealthGrid extends Component {
     return (
       <div className={classnames('container', styles.gridMain)}>
       { showHeading === true ?
-      <SectionHeadingHealth heading="the zones" headingshadow="the zones"/> : null}
+      <SectionHeadingHealth heading="zones" headingshadow="health"/> : null}
       <div className="flex-container">
         <div className={classnames("row", "no-gutters", styles.servicesGrid)}>{dataItems}</div>
       </div>

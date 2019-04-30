@@ -17,10 +17,15 @@ import Login from "./components/auth/Login";
 
 import Landing from "./components/landing/Landing";
 import Aesthetics from "./components/aesthetics/landing/Aesthetics";
-import AcneScarsQA from "./components/aesthetics/services/acnescars/AcneScarsQA";
+import AcneScars from "./components/aesthetics/services/acnescars/AcneScars";
 import LaserHair from "./components/aesthetics/services/laserhair/LaserHair";
+import Botox from "./components/aesthetics/services/botox/Botox";
+import Juvederm from "./components/aesthetics/services/juvederm/Juvederm";
+import Ipl from "./components/aesthetics/services/ipl/Ipl";
+import Sculpsure from "./components/aesthetics/services/sculpsure/Sculpsure";
 import Healthzones from "./components/healthzones/landing/Healthzones";
 import Ozone from "./components/healthzones/services/ozone/Ozone";
+import Infrared from "./components/healthzones/services/infrared/Infrared";
 import AestheticsGrid from "./components/services/AestheticsGrid_db";
 
 import PricingLaserHair from "./components/pricing/PricingLaserHair";
@@ -64,9 +69,14 @@ class App extends Component {
               <Route exact path="/aesthetics" component={Aesthetics} />
               <Route exact path="/aesthetics/grid" component={AestheticsGrid} />
               <Route exact path="/aesthetics/laserhair" component={LaserHair} />
-              <Route exact path="/aesthetics/acnescars" component={AcneScarsQA} />
+              <Route exact path="/aesthetics/acnescars" component={AcneScars} />
+              <Route exact path="/aesthetics/juvederm" component={Juvederm} />
+              <Route exact path="/aesthetics/ipl" component={Ipl} />
+              <Route exact path="/aesthetics/botox" component={Botox} />
+              <Route exact path="/aesthetics/sculpsure" component={Sculpsure} />
               <Route exact path="/healthzones" component={Healthzones} />
               <Route exact path="/healthzones/ozone" component={Ozone} />
+              <Route exact path="/healthzones/infrared" component={Infrared} />
               <Route exact path="/pricing/laserhair" component={PricingLaserHair} />
               <Route exact path="/not-found" component={NotFound} />
             </div>

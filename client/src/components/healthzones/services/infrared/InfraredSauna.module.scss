@@ -1,0 +1,17 @@
+@import '../../../../variables';
+
+.sectionMain {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0;
+  margin: 0;
+  
+}
+
+.sectionDetail {
+  @include text-detail;
+  background-image: url('https://s3-us-west-2.amazonaws.com/ozonics-commercial/infrared-1-600x400.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+}

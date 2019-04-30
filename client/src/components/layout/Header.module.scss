@@ -1,11 +1,5 @@
-/* .mainNavbar {
-  padding: 0px;
-} */
+@import '../../variables';
 
-/* #basic-nav-dropdown {
-  width: 100%;
-  margin-right: 250px;
-} */
 .aestheticsOverview {
   color: blue;
   font-weight: bold;
@@ -16,6 +10,19 @@
   font-weight: bold;
 }
 
-.accountDropdown {
-  margin-right: 0px;
+.dropdown-menu, .accountDropdown {
+  @include mq($until: tablet) {
+    
+  }
+  @include mq($from: tablet) {
+    position: relative;
+  left: -100px;
+  background-color: white;
+  }
+  @include mq($from: desktop) {
+    position: relative;
+  left: -100px;
+  background-color: white;
+  }
+  
 }

@@ -12,8 +12,8 @@ function LandingAesthetics(props) {
     <div className={classnames("container-fluid", styles.sectionMain)}>
       {/* Aesthetics Header */}
       <SectionHeadingAesthetics
-        heading="precision aesthetics"
-        headingshadow=" aesthetics"
+        heading="aesthetics"
+        headingshadow="precision"
       />
       {/* Aesthetics Introduction */}
       <div

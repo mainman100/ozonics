@@ -23,6 +23,12 @@ class Header extends Component {
 
     const authLinks = (
       <Nav>
+        <Navbar.Text
+          style={{ textTransform: "capitalize", marginRight: "20px" }}
+        >
+          welcome {user.name}
+        </Navbar.Text>
+
         <NavDropdown title="Account" id="basic-nav-dropdown">
           <NavDropdown.Item href="/customer/dashboard">
             Your Account
@@ -46,8 +52,13 @@ class Header extends Component {
     const guestLinks = (
       <Nav>
         <NavDropdown title="Account" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/register">Create Account</NavDropdown.Item>
-          <NavDropdown.Item href="/login">Customer Login</NavDropdown.Item>
+          <div /* className={classnames(
+              styles.accountDropdown
+            )}  */
+          >
+            <NavDropdown.Item href="/register">Create Account</NavDropdown.Item>
+            <NavDropdown.Item href="/login">Customer Login</NavDropdown.Item>
+          </div>
         </NavDropdown>
       </Nav>
     );
@@ -189,6 +200,10 @@ class Header extends Component {
                   </NavDropdown.Item>
                 ) : null}
               </NavDropdown>
+
+              <Nav.Link href="/location">Locations</Nav.Link>
+
+              <Nav.Link href="/contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
 
@@ -207,26 +222,11 @@ class Header extends Component {
               >
                 Lake Nona, Orlando
               </Nav.Link>
-
-              <Nav.Link href="/location">Locations</Nav.Link>
-
-              <Nav.Link href="/contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
 
-          {isAuthenticated ? (
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Navbar.Text style={{ textTransform: "capitalize " }}>
-                welcome {user.name}
-              </Navbar.Text>
-            </Navbar.Collapse>
-          ) : null}
-
           <Navbar.Collapse
-            className={classnames(
-              "justify-content-end ml-auto",
-              styles.accountDropdown
-            )}
+            className={classnames("justify-content-end ml-auto")}
             id="basic-navbar-nav"
           >
             {isAuthenticated ? authLinks : guestLinks}

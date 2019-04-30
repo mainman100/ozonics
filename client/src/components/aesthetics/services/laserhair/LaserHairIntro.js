@@ -38,7 +38,7 @@ class LaserHairIntro extends Component {
               most up to date cosmetic laser system.
             </p>
             <p className={classnames("p-1", styles.intro)}>
-              You want to look your best. You need to look your best. Cost should not be allowed to get in the way. We will
+              You want you to look your best. You need to look your best. Cost should not be allowed to get in the way. We will
               therefore work with you to spread the costs of the treatment to
               make it as affordable as possible.
             </p>

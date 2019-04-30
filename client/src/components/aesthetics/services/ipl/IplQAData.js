@@ -1,4 +1,4 @@
-export const qaIPL = [
+export const qaIpl = [
   {
     id: 1,
     Q: "How does IPL therapy work?",

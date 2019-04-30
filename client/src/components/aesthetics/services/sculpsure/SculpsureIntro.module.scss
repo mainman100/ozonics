@@ -1,0 +1,28 @@
+@import "../../../../variables";
+
+.intro {
+  @include text-detail;
+  text-align: justify;
+}
+
+.sectionMain {
+  @include mq($until: tablet) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  @include mq($from: tablet) {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  @include mq($from: desktop) {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
+
+.sectionIntroLeft {
+  img {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,11 @@
+@import "../../../../variables";
+
+.sectionMain {
+  background-color: $color-bg-grey;
+  padding-bottom: 3em;
+}
+
+.dataGrid {
+  display: flex;
+  justify-content: center;
+} 

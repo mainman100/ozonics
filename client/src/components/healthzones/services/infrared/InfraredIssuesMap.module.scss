@@ -1,0 +1,23 @@
+@import "../../../../variables";
+
+.wrapper {
+  text-align: center;
+  border: 1px solid black;
+  background-color: lightyellow;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  @include mq($until: tablet) {
+    padding-top: 0;
+  }
+  @include mq($from: tablet) {
+    padding-top: 0;
+  }
+  @include mq($from: desktop) {
+    padding-top: 0;
+  }
+}
+
+.sectionTitle {
+  @include aesthetics-section-heading-main;
+}
+

@@ -1,4 +1,4 @@
-export const qaSculpSure = [
+export const qaSculpsure = [
   {
     id: 1,
     Q: "What is the purpose of body contouring?",

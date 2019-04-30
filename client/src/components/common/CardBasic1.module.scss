@@ -4,13 +4,13 @@
   background-color: $color-bg-grey;
   margin: 10px;
   @include mq($until: tablet) {
-    height: 190px;
+    height: 260px;
   }
   @include mq($from: tablet) {
-    height: 140px;
+    height: 190px;
   }
   @include mq($from: desktop) {
-    height: 190px;
+    height: 240px;
   }
 }
 

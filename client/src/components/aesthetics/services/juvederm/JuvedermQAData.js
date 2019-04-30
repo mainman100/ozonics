@@ -1,4 +1,4 @@
-export const qaJuveDerm = [
+export const qaJuvederm = [
   {
     id: 1,
     Q: "What is Juvederm\u00AE?",

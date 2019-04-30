@@ -36,7 +36,7 @@ class AestheticsGrid extends Component {
     return (
       <div className={classnames("container", styles.gridMain)}>
         {showHeading === true ? (
-          <SectionHeadingAesthetics heading="aesthetics services" headingshadow="services" />
+          <SectionHeadingAesthetics heading="services" headingshadow="aesthetics" />
         ) : null}
         <div className="flex-container">
           <div

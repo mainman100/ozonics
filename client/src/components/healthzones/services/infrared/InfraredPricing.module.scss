@@ -1,0 +1,31 @@
+@import '../../../../variables';
+
+.sectionMain {
+  background-color: rgba(17, 148, 17, 1);
+  padding: 0;
+  margin: 0;
+}
+
+.gridMain {
+  padding: 0;
+  margin: 0;
+}
+
+.dataGrid {
+  display: flex;
+  justify-content: center;
+} 
+
+
+/* .title {
+  @include mq($until: tablet) {
+    min-height: 100px;
+  }
+  @include mq($from: tablet) {
+    min-height: 100px;
+  }
+  @include mq($from: desktop) {
+    min-height: 100px;
+  }
+} */
+
