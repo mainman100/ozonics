@@ -1,31 +1,11 @@
 /* Health Services Pages Intros Benefits */
 
 export const healthServicesIntros = {
-  
-
-  salt: [
-    "Salt Booth therapy is a powerful holistic and  natural treatment for a wide range of respiratory conditions.",
-    "If you or your child has asthma or bronchitis, a course of Salt Booth Therapy could provide outstanding relief."
-  ],
+ 
   dripbar: ["dripbar"]
 };
 
 
-/* health services headlines */
-/* SALT */
-
-/* health services benefits long*/
-/* INFRARED */
-
-
-
-/* health services benefits long*/
-/* SALT */
-
-/* TO FOLLOW */
-
-/*Service headlines*/
-/* OZONE */
 
 export const ozoneHeadlines2 = [
   {

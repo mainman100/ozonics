@@ -39,7 +39,7 @@ class OzoneScience extends Component {
 
     return (
       <div className="container mt-5 mb-2">
-       <SectionHeadingHealth heading="great science" headingshadow="science"/>
+       <SectionHeadingHealth heading="the science" headingshadow=""/>
         <Accordion>{dataItems}</Accordion>
       </div>
     );

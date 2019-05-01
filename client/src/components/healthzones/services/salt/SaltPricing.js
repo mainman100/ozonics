@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import styles from "./OzonePricing.module.scss";
+import styles from "./SaltPricing.module.scss";
 import classnames from 'classnames';
-// import './OzonePricing.scss' ;
+// import './SaltPricing.scss' ;
 import CardBasic from "../../../common/CardBasic";
 import SectionHeadingHealth from '../../../common/SectionHeadingHealth';
-import { ozonePricingData } from "./OzonePricingData";
+import { saltPricingData } from "./SaltPricingData";
 
-export default class OzonePricing extends Component {
+export default class SaltPricing extends Component {
   render() {
-    const data = ozonePricingData;
+    const data = saltPricingData;
     let dataItems = [];
     let newItem;
     let content;

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import classnames from 'classnames';
 import CardBasic2 from "../../../common/CardBasic2";
-import styles from './InfraredExperience.module.scss';
+import styles from './SaltExperience.module.scss';
 import SectionHeadingHealth from '../../../common/SectionHeadingHealth';
-import { infraredExperience } from "./InfraredExperienceData";
+import { saltExperience } from "./SaltExperienceData";
 
-export default class InfraredExperience extends Component {
+export default class SaltExperience extends Component {
   render() {
-    const data = infraredExperience;
+    const data = saltExperience;
     let dataItems = [];
     let newItem;
     let content;

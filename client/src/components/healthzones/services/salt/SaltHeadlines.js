@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import CardBasic1 from "../../../common/CardBasic1";
 import SectionHeadingHealth from '../../../common/SectionHeadingHealth';
-import { ozoneHeadlines } from "./OzoneHeadLinesData";
+import { saltHeadlines } from "./SaltHeadLinesData";
 
-export default class OzoneHeadlines extends Component {
+export default class SaltHeadlines extends Component {
   render() {
-    const data = ozoneHeadlines;
+    const data = saltHeadlines;
     let dataItems = [];
     let newItem;
     let content;

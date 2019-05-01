@@ -29,7 +29,7 @@ class InfraredBenefits extends Component {
 
     return (
       <div className="container mt-5 mb-2">
-      <SectionHeadingHealth heading="benefits" headingshadow="benefits"/>
+      <SectionHeadingHealth heading="benefits" headingshadow="health"/>
         <Accordion >{dataItems}</Accordion>
       </div>
     );

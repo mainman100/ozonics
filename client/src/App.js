@@ -26,6 +26,7 @@ import Sculpsure from "./components/aesthetics/services/sculpsure/Sculpsure";
 import Healthzones from "./components/healthzones/landing/Healthzones";
 import Ozone from "./components/healthzones/services/ozone/Ozone";
 import Infrared from "./components/healthzones/services/infrared/Infrared";
+import Salt from "./components/healthzones/services/salt/Salt";
 import AestheticsGrid from "./components/services/AestheticsGrid_db";
 
 import PricingLaserHair from "./components/pricing/PricingLaserHair";
@@ -77,6 +78,7 @@ class App extends Component {
               <Route exact path="/healthzones" component={Healthzones} />
               <Route exact path="/healthzones/ozone" component={Ozone} />
               <Route exact path="/healthzones/infrared" component={Infrared} />
+              <Route exact path="/healthzones/salt" component={Salt} />
               <Route exact path="/pricing/laserhair" component={PricingLaserHair} />
               <Route exact path="/not-found" component={NotFound} />
             </div>

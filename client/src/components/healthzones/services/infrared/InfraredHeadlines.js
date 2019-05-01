@@ -26,7 +26,7 @@ export default class InfraredHeadlines extends Component {
     });
     return (
       <div className="container mt-2 mb-2">
-      <SectionHeadingHealth heading="highlights" headingshadow="highlights"/>
+      <SectionHeadingHealth heading="highlights" headingshadow="headlines"/>
         <div className="row no-gutters">{dataItems}</div>
       </div>
     );

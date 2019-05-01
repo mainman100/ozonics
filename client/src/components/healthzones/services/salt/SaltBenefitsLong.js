@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import classnames from "classnames";
-import styles from "./OzoneBenefitsLong.module.scss";
+import styles from "./SaltBenefitsLong.module.scss";
 import SectionHeadingHealth from '../../../common/SectionHeadingHealth';
 import { Accordion, AccordionItem } from "react-sanfona";
-import { ozoneBenefits } from "./OzoneBenefitsLongData";
+import { saltBenefits } from "./SaltBenefitsLongData";
 
-class OzoneBenefits extends Component {
+class SaltBenefits extends Component {
   
   render() {
-    const data = ozoneBenefits;
+    const data = saltBenefits;
     
     let dataItems = [];
     let newItem;
@@ -36,4 +36,4 @@ class OzoneBenefits extends Component {
   }
 }
 
-export default OzoneBenefits;
+export default SaltBenefits;

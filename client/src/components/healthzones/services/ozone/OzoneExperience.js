@@ -28,10 +28,12 @@ export default class OzoneExperience extends Component {
     });
     return (
       <div className={classnames("container-fluid mt-2 mb-2", styles.sectionMain)}>
-      <SectionHeadingHealth heading="the experience" headingshadow="experience"/>
-        <div className="row no-gutters">
+      <SectionHeadingHealth heading="experience" headingshadow="enjoyable"/>
+      <div className={classnames("flex-container")}>
+        <div className={classnames("row no-gutters", styles.gridData)}>
         {dataItems}
         </div>
+      </div>
       </div>
     );
   }

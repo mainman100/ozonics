@@ -28,7 +28,7 @@ export default class InfraredPricing extends Component {
     });
     return (
       <div className={classnames("container-fluid pb-5", styles.sectionMain)}>
-      <SectionHeadingHealth heading="pricing" headingshadow="pricing"/>
+      <SectionHeadingHealth heading="packages" headingshadow="pricing"/>
       <div className={classnames("flex-container", styles.gridMain)}>
         <div className={classnames("row", "no-gutters", styles.dataGrid)}>
           {dataItems}
