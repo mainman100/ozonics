@@ -1,58 +1,37 @@
 export const saltHeadlines = [
   {
     id: 1,
-    title: "Wellness",
+    title: "Respiratory Conditions",
     text: [
-      "Relaxes, invigorates, protects and heals like no other wellness therapy."
+      "Can alleviate asthma, chronic bronchitis, COPD and other respiratory conditions."
     ]
   },
-  {
+ /*  {
     id: 2,
-    title: "Fatigue",
+    title: "Improved Breathing",
     text: [
-      "Wonderful for Chronic Fatigue Syndrome and tiredness in general."
+      "Can make your breathing easier after just a few sessions."
     ]
-  },
+  }, */
   {
     id: 3,
-    title: "Skin Conditions",
+    title: "Clear Your Lungs",
     text: [
-      "Great for Acne, Ulcers, Cellulitis and any skin conditions you may have."
+      "Clear mucus and sticky phlegm from the lungs."
     ]
   },
   {
     id: 4,
-    title: "Sunburn",
+    title: "Boosts Immunity",
     text: [
-      "Fast relief from Sunburn."
+      "Strengthen your immune system."
     ]
   },
   {
     id: 5,
-    title: "Boosts Body Immunity",
+    title: "Children",
     text: [
-      "Boosts immune system through boosting the release of Cytokines by white blood cells."
-    ]
-  },
-  {
-    id: 6,
-    title: "Improves Circulation",
-    text: [
-      "Stimulates circulation and improves capacity of red blood cells to carry oxygen."
-    ]
-  },
-  {
-    id: 7,
-    title: "Alleviates Medical Conditions",
-    text: [
-      "Its systemic effects can alleviate certain medical conditions. "
-    ]
-  },
-  {
-    id: 8,
-    title: "Scientific Basis",
-    text: [
-      "Like no other alternative therapy Ozone Therapy has a strong scientific basis."
+      "Safe for use by children of all ages. The salt concentration is adjusted for age."
     ]
   }
 ];

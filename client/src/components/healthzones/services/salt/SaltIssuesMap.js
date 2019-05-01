@@ -12,19 +12,19 @@ export default function SaltIssuesMap() {
         </p>
       </div>
       <div className="row no-gutters">
-        <div id="a" className="col-4 pt-4 pb-4">
+        <div id="a" className="col-3 pt-4 pb-4">
           <div className="text-center">Asthma</div>
         </div>
-        <div id="b" className="col-4 pt-4 pb-4">
+        <div id="b" className="col-3 pt-4 pb-4">
           <div className="text-center">Bronchitis</div>
         </div>
-        <div id="c" className="col-4 pt-4 pb-4">
+        <div id="c" className="col-3 pt-4 pb-4">
           <div className="text-center">COPD</div>
         </div>
-        {/* <div id="d" className="col-4 pt-4 col-lg-2 pb-4">
-          <div className="text-center">Sunburn</div>
+        <div id="d" className="col-3 pt-4 col-lg-2 pb-4">
+          <div className="text-center">Congested Lungs</div>
         </div>
-        <div id="e" className="col-4 pt-4 col-lg-2 pb-4">
+        {/* <div id="e" className="col-4 pt-4 col-lg-2 pb-4">
           <div className="text-center">Diabetic ulcers</div>
         </div>
         <div id="f" className="col-4 col-lg-2 pt-4 pb-4">
