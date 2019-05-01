@@ -21,7 +21,7 @@ class Salt extends Component {
         <SaltExperience />
         <SaltBooth />
         <SaltPricing />
-        <SaltBenefitsLong />
+        {/* <SaltBenefitsLong /> */}
         {/* <SaltScience /> */}
       </div>
     );
